@@ -4,6 +4,27 @@
     --accent-color:#FF6C00;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
 }
@@ -17,7 +38,42 @@ body {
     font-weight: 600;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 /*====================HEADER====================*/
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    margin-right: 70px;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .menu-link {
     font-size: 12px;
     line-height: 1.33;
@@ -40,6 +96,8 @@ line-height: 1.33;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 /* color: #FFFFFF; */
+margin-left: auto;
+margin-right: 40px;
 }
 
 .tel-link:hover,
@@ -49,6 +107,11 @@ text-transform: uppercase;
 }
 
 .modal-btn {
+width: 160px; 
+border: 1px solid #FF6C00;
+border-radius: 25px;
+padding: 12px 20px;
+background-color: transparent;
 font-size: 12px;
 line-height: 1.33;
 letter-spacing: 0.09em;
@@ -66,6 +129,15 @@ cursor: pointer;
 /*====================HEADER====================*/
 
 /*====================HERO====================*/
+.hero-container {
+    display: flex;
+    align-items: center;
+}
+
+.social-links-list {
+    display: flex;
+}
+
 .social-links-list-link {
     font-size: 11px;
     line-height: 1.36;
@@ -107,6 +179,14 @@ color: #9DA4BD;
 
 
 /*====================ABOUT====================*/
+.about-container {
+    display: flex;
+}
+
+.about-images-list {
+    display: flex;
+}
+
 .about-title {
 font-size: 11px;
 line-height: 1.18;
@@ -143,6 +223,10 @@ color: #555555;
 /*====================ABOUT====================*/
 
 /*====================SERVICES====================*/
+.prices-container {
+    display: flex;
+}
+
 .services-suptitle{  
 font-size: 11px;
 line-height: 1.18;
@@ -240,6 +324,10 @@ text-transform: uppercase;
 color: #303030;
 }
 
+.masters-list {
+    display: flex;
+}
+
 .masters-title {
 font-family: var(--secondary-font);
 font-weight: 700;
@@ -280,9 +368,18 @@ text-transform: uppercase;
 color: #303030;
 }
 
+.gallery-list {
+    display: flex;
+}
+
+
 /*====================GALLERY====================*/
 
 /*====================FEEDBACK====================*/
+.feedback-container {
+    display: flex;
+} 
+
 .feedback-title {
 font-family: var(--secondary-font);
 font-weight: 700;
@@ -338,11 +435,20 @@ color: #9DA4BD;
 }
 
 /*====================FOOTER====================*/
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+
 .footer-copyright {
 font-size: 11px;
 line-height: 15px;
 letter-spacing: 0.2em;
 color: #9DA4BD;
+}
+
+.footer-social-links-list {
+    display: flex;
 }
 
 .footer-social-links-list-item-link {
